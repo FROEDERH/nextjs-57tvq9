@@ -26,7 +26,7 @@ export default function Home() {
       <div>
         {isLoading && <span>Carregando...</span>}
         {list?.map(item => {
-          <div>{item.name}</div>;
+         return <div>{item.Title}</div>;
         })}
       </div>
     </div>
