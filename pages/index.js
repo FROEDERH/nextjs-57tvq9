@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   const [search, setSearch] = useState('Star Wars');
   const [list, setList] = useState(null);
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   function SearchInAPI(){
     setIsLoading(true);
