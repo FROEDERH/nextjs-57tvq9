@@ -12,7 +12,7 @@ export default function Home() {
     .then(x => x.json())
     .then(x => {
       setIsLoading(false);
-      setList(x.search);
+      setList(x.Search);
     });
   }
 
