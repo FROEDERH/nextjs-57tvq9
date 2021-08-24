@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import MovieList from '../components/MovieList/MovieList';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -25,9 +26,7 @@ export default function Home() {
       <h1>Buscando por {search}</h1>
       <div>
         {isLoading && <span>Carregando...</span>}
-        {list?.map(item => {
-         return <div>{item.Title}</div>;
-        })}
+       <MovieList list={list} />
       </div>
     </div>
   );
