@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -8,13 +8,17 @@ export default function Home() {
 
   function SearchInAPI(){
     setIsLoading(true);
-    fetch(`https://www.omdbapi.com/?apikey=8da00471&s=`)
+    fetch(`https://www.omdbapi.com/?apikey=8da00471&s=${search}`)
     .then(x => x.json())
     .then(x => {
       setIsLoading(false);
-      setList(x);
+      setList(x.search);
     });
   }
+
+  useEffect ( ()  => {
+    SearchInAPI();
+   },[search]);
 
   return (
     <div>
