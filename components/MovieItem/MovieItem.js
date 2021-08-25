@@ -1,4 +1,6 @@
-import styles from './MovieItem.module.css';
+import MovieItem from '../MovieItem/MovieItem';
+import styles from './MovieList.module.css';
+
 export default function MovieItem({ item, ...props }) {
   return (
     <div>
