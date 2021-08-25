@@ -10,3 +10,12 @@
   line-height: 1;
   
 }
+.content_ballon{
+  background: #37688D;
+  height: 50px;
+  width: 100px;
+  position: relative;
+  margin-left: 9px;
+  color: #fff;
+  padding: 3px 5px;
+}
