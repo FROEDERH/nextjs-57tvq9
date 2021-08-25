@@ -1,5 +1,5 @@
 .Grid {
   display: grid;
   grid-template-columns: auto;
-  padding: 5px;
+  padding: 20px;
 }
