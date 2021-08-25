@@ -14,8 +14,10 @@
   background: #37688D;
   height: 50px;
   width: 100px;
-  position: relative;
   margin-left: 9px;
-  color: #fff;
+  color: rgb(122, 17, 17);
   padding: 3px 5px;
+}
+.ballon img{
+  position: absolute;
 }
