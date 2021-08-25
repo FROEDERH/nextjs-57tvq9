@@ -1,4 +1,4 @@
 .Grid{
   display: grid;
-  grid-column: auto;
+  grid-template-columns:max-content;
 }
