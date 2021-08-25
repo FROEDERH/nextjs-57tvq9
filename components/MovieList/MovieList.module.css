@@ -2,7 +2,4 @@
   display: grid;
   grid-template-columns: auto;
 }
-.img {
-  width: 300px;
-  height: 200px;
-}
+
