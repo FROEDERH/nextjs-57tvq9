@@ -2,22 +2,19 @@
   width: 300px;
   height: 500px;
   padding: 20px;
+  position: absolute;
 }
-.h1{
+.h1 {
   color: black;
   text-align: center;
   margin: 0;
   line-height: 1;
-  
 }
-.content_ballon{
-  background: #37688D;
+.content_ballon {
+  background: #37688d;
   height: 50px;
   width: 100px;
   margin-left: 9px;
   color: rgb(122, 17, 17);
   padding: 3px 5px;
-}
-.ballon img{
-  position: absolute;
 }
