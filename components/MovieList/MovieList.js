@@ -1,12 +1,12 @@
-import MovieItem from "../MovieItem/MovieItem";
+import MovieItem from '../MovieItem/MovieItem';
 import styles from './MovieList.module.css';
 
-export default function MovieList({list, ...props}){
+export default function MovieList({ list, ...props }) {
   return (
-   <div>
+    <div className={styles.Grid}>
       {list?.map(item => {
-         return <MovieItem item={item} />;
-        })}
-   </div>
+        return <MovieItem item={item} />;
+      })}
+    </div>
   );
 }
