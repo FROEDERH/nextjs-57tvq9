@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 .Grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
