@@ -21,8 +21,14 @@ export default function Home() {
     SearchInAPI();
    },[search]);
 
+   function handleSearchChanges(event){
+     const value = event.target.value;
+     setSearch(value)
+   }
+
   return (
     <div>
+      <input onChange={handleSearchChanges} />
       <h1>Buscando por {search}</h1>
       <div>
         {isLoading && <span>Carregando...</span>}
