@@ -21,8 +21,8 @@ export default function Movie() {
     <div>
       <Link href={'/'}>Voltar</Link>
       <div>ID: {id}</div>
-      <div>Name : {item.Title}</div>
-      <div>Genre : {item.Genre}</div>
+      <div>Name : {item?.Title}</div>
+      <div>Genre : {item?.Genre}</div>
     </div>
   );
 }
