@@ -9,7 +9,7 @@ export default function Movie() {
 
   useEffect(() => {
     if (id != null) {
-      fetch(`https://www.omdbapi.com/?apikey=8da00471&s=${debouncedSearch}`)
+      fetch(`https://www.omdbapi.com/?apikey=8da00471&s=${id}`)
         .then(x => x.json())
         .then(x => {
           setItem(x);
