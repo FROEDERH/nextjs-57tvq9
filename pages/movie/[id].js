@@ -7,10 +7,22 @@ export default function Movie() {
   const id = router.query.id;
   const [item, setItem] = useState(null);
 
+  useEffect(() => {
+    if (id != null) {
+      fetch(`https://www.omdbapi.com/?apikey=8da00471&s=${debouncedSearch}`)
+        .then(x => x.json())
+        .then(x => {
+          setItem(x);
+        });
+    }
+  }, [id]);
+
   return (
     <div>
       <Link href={'/'}>Voltar</Link>
       <div>ID: {id}</div>
+      <div>Name : {item?.Title}</div>
+      <div>Genre : {item?.Genre}</div>
     </div>
   );
 }
