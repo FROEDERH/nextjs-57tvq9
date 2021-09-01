@@ -19,3 +19,37 @@
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
 }
+.item {
+  margin: 1rem;
+  border-radius: o.5rem;
+  background: #fff;
+  box-shadow: 0 0 10px -5px #000;
+  transition: all ease-in-out 200ms;
+  cursor: pointer;
+  position: relative;
+}
+
+.item:hover {
+  box-shadow: 0 0 15px -6px #000;
+  transform: translateY(-2px) scale(1.01);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.title {
+  display: block;
+  padding: 0, 75rem 1rem;
+}
+
+.year {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #000;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
