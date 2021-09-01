@@ -7,16 +7,11 @@ export default function MovieItem({ item, ...props }) {
   return (
     <Link href={`movie/${item.imdbID}`}>
       <a className={styles.item}>
-        <img className={styles.itemimg} src={item.Poster} />
+        <img src={item.Poster} />
 
-        <span className={styles.Year} src={item.Year}>
-          {' '}
-        </span>
+        <span className={styles.year}> {item.Year} </span>
 
-        <span className={styles.Title} src={item.Title}>
-          {' '}
-          {item.Title}{' '}
-        </span>
+        <span className={styles.title}> {item.Title} </span>
       </a>
     </Link>
   );
