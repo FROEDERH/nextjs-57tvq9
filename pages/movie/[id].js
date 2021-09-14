@@ -20,7 +20,7 @@ export default function Movie() {
   return (
     <div>
       <Link href={'/'}>Voltar</Link>
-      <div>ID: {id}</div>
+      <div className={styles.year}>ID: {id}</div>
       <div>Name : {item?.Title}</div>
       <div>Genre : {item?.Genre}</div>
     </div>
