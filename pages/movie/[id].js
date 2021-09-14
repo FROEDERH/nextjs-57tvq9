@@ -21,7 +21,7 @@ export default function Movie() {
   return (
     <div>
       <Link href={'/'}>Voltar</Link>
-      <div className={styles.Grid}>ID: {id}</div>
+      <div className={styles.id}>ID: {id}</div>
       <div>Name : {item?.Title}</div>
       <div>Genre : {item?.Genre}</div>
     </div>
