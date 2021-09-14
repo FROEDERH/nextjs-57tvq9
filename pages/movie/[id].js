@@ -1,6 +1,7 @@
 import react, { useState, useEffect } from 'react';
 import Link from 'next/dist/client/link';
 import { useRouter } from 'next/router';
+import styles from './MovieList.module.css';
 
 export default function Movie() {
   const router = useRouter();
@@ -20,7 +21,7 @@ export default function Movie() {
   return (
     <div>
       <Link href={'/'}>Voltar</Link>
-      <div>ID: {id}</div>
+      <div className={styles.Grid}>ID: {id}</div>
       <div>Name : {item?.Title}</div>
       <div>Genre : {item?.Genre}</div>
     </div>
