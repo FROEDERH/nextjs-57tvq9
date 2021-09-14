@@ -1,7 +1,7 @@
 import react, { useState, useEffect } from 'react';
 import Link from 'next/dist/client/link';
 import { useRouter } from 'next/router';
-import styles from './MovieList.module.css';
+import styles from './styles.module.css';
 
 export default function Movie() {
   const router = useRouter();
