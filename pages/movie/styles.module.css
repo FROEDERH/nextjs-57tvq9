@@ -1,7 +1,21 @@
+.id {
+  color: red;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border: 10px;
+}
 
-  
-  .id {
-    color: red;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-  }
+.voltar {
+  border: 10px;
+  color: blue;
+}
+
+.genre {
+  border: 10px;
+  color: red;
+}
+
+.name {
+  border: 10px;
+  color: red;
+}
