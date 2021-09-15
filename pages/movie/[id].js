@@ -24,11 +24,12 @@ export default function Movie() {
         Voltar
       </Link>
       <img className={styles.img} src={item?.Poster} />
-      <a className={styles.Nome} src={item?.Name} />
+      <div className={styles.div1}>
 
       <div className={styles.id}>ID: {id}</div>
       <div className={styles.name}>Name : {item?.Title}</div>
       <div className={styles.genre}>Genre : {item?.Genre}</div>
+    </div>
     </div>
   );
 }
