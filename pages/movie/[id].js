@@ -20,16 +20,15 @@ export default function Movie() {
 
   return (
     <div>
-      <Link href={'/'} className={styles.voltar}>
-        Voltar
+      <Link href={'/'}>
+        <a className={styles.voltar}>Voltar</a>
       </Link>
       <img className={styles.img} src={item?.Poster} />
       <div className={styles.div1}>
-
-      <div className={styles.id}>ID: {id}</div>
-      <div className={styles.name}>Name : {item?.Title}</div>
-      <div className={styles.genre}>Genre : {item?.Genre}</div>
-    </div>
+        <div className={styles.id}>ID: {id}</div>
+        <div className={styles.name}>Name : {item?.Title}</div>
+        <div className={styles.genre}>Genre : {item?.Genre}</div>
+      </div>
     </div>
   );
 }
