@@ -25,3 +25,7 @@
   padding: 5px;
   background-color: black;
 }
+.img{
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
