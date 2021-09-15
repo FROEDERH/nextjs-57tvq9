@@ -4,7 +4,7 @@ import useDebounce from '../hooks/useDebounce';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  const [search, setSearch] = useState('Star Wars');
+  const [search, setSearch] = useState('');
   const [list, setList] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const debouncedSearch = useDebounce(search, 500);
