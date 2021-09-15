@@ -24,6 +24,7 @@ export default function Movie() {
         Voltar
       </Link>
       <img className={styles.img} src={item?.Poster} />
+      <a className={styles.Nome} src={item?.Name} />
 
       <div className={styles.id}>ID: {id}</div>
       <div className={styles.name}>Name : {item?.Title}</div>
