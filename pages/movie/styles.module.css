@@ -8,14 +8,17 @@
 .voltar {
   border: 10px;
   color: blue;
+  padding: 5px;
 }
 
 .genre {
   border: 10px;
   color: red;
+  padding: 5px;
 }
 
 .name {
   border: 10px;
   color: red;
+  padding: 5px;
 }
